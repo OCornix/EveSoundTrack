@@ -2,7 +2,7 @@
     "name": "EveSoundTrack",
     "description": "A mod that replaces the soundtrack with songs by Eve.",
     "website_url": "https://github.com/OCornix/EveSoundTrack",
-    "version_number": "1.0",
+    "version_number": "1.0.0",
     "dependencies": []
 }
 
