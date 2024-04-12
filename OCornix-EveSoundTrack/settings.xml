@@ -1,0 +1,209 @@
+<?xml version = "1.0"?>
+<settings>
+    <!-- Master volume for all music. Decimal between 0 and 1 -->
+    <volume>0.5</volume>
+
+    <!-- Should music loop? If not true, then another song is selected from scene matches -->
+    <loop>true</loop>
+
+    <!-- To have this plugin scan a different directory for music files,
+        Uncomment <music-path> below (remove <!- - and - -> from the line below) -->
+
+    <!-- <music-path>C:\Users\YourName\Music\SomeMusicFolder</music-path> -->
+
+    <!--
+        Here is where you define what songs are used in which scenes and if they are
+        "boss" music (played during teleporter events or not).
+
+        *****  If you just want to play with RoR1 music, you just need to make sure  *****
+        *****  your music filenames match EXACTLY with all name="" attributes below. *****
+
+        Here is an example of a file that will play on the title screen and other main menus:
+
+        
+        "name" must match the file name exactly. Supported extensions are ".mp3" and ".wav" (case sensitive).
+
+        "scenes" are the comma separated scene IDs (or levels) that will have a chance to play this music.
+        See README.md for more info on scene IDs.
+
+        "boss" is if this music plays during a teleporter event or not (or during the final boss).
+        It's important to understand that when boss is true, the music ONLY plays during teleporter events
+        and when boss is false, the music ONLY plays when *NOT* during a teleporter event.
+
+        If you want music to play regardless of the teleporter charging, you must make two <song> definitions
+        with the same data but with one boss="true" and the other boss="false"
+
+        "volume" is a local volume decimal (between 0 and 1) that gets multiplied with the global volume tag.
+
+        You can have multiple <song> definitions with the same or similar data. If a scene matches multiple <song>'s
+        then this plugin will choose one randomly. If NO matches are found, then the plugin will choose a random
+        sound file it found in the plugin folder.
+    -->
+    <music>
+        <song
+            name="pray.mp3"
+            scenes="intro,bazaar"
+            boss="false"
+            volume="0.5"
+        />
+        <song
+            name="Slumber.mp3"
+            scenes="title,logbook,crystalworld,eclipseworld"
+            boss="false"
+            volume="0.5"
+        />
+        <song
+            name="Dawn.mp3"
+            scenes="lobby"
+            boss="false"
+            volume="0.5"
+        />
+        <song
+            name="raison d'etre.mp3"
+            scenes="blackbeach,blackbeach2,golemplains,golemplains2,snowyforest"
+            boss="true"
+            volume="0.5"
+        />
+        <song
+            name="Meru factory (Re arrange ver).mp3"
+            scenes="blackbeach,blackbeach2,golemplains,golemplains2,snowyforest"
+            boss="false"
+            volume="0.5"
+        />
+
+        <song
+            name="Fuyukan.mp3"
+            scenes="ancientloft,foggyswamp,goolake"
+            boss="true"
+            volume="0.5"
+        />
+        <song
+            name="Mayoigo.mp3"
+            scenes="ancientloft,foggyswamp,goolake"
+            boss="false"
+            volume="0.5"
+        />
+        <song
+            name="Baumkuchen End.mp3"
+            scenes="wispgraveyard,frozenwall,sulfurpools"
+            boss="true"
+            volume="0.5"
+        />
+        <song
+            name="Ougon No Hibi.mp3"
+            scenes="wispgraveyard,frozenwall,sulfurpools"
+            boss="false"
+            volume="0.5"
+        />
+        <song
+            name="Insomnia.mp3"
+            scenes="dampcavesimple,rootjungle,shipgraveyard"
+            boss="true"
+            volume="0.5"
+        />
+        <song
+            name="Dramaturgy.mp3"
+            scenes="dampcavesimple,rootjungle,shipgraveyard"
+            boss="false"
+            volume="0.5"
+        />
+        <song
+            name="How to Eat Life.mp3"
+            scenes="skymeadow"
+            boss="true"
+            volume="0.5"
+        />
+        <song
+            name="Tokyo Ghetto.mp3"
+            scenes="skymeadow"
+            boss="false"
+            volume="0.5"
+        />
+        <song
+            name="Avant.mp3"
+            scenes="moon2"
+            boss="true"
+            volume="0.5"
+        />
+        <song
+            name="Outsider.mp3"
+            scenes="moon2"
+            boss="false"
+            volume="0.5"
+        />
+
+        <song
+            name="Kaede.mp3"
+            scenes="outro"
+            boss="false"
+            volume="0.5"
+        />
+        <song
+            name="Bouto.mp3"
+            scenes="mysteryspace"
+            boss="false"
+            volume="0"
+        />
+        <song
+            name="Bouto.mp3"
+            scenes="limbo"
+            boss="true"
+            volume="0.5"
+        />
+        <song
+            name="Bouto.mp3"
+            scenes="limbo"
+            boss="false"
+            volume="0"
+        />
+        <song
+            name="Boukenroku.mp3"
+            scenes="goldshores"
+            boss="true"
+            volume="0.5"
+        />
+        <song
+            name="Boukenroku.mp3"
+            scenes="goldshores"
+            boss="false"
+            volume="0.5"
+        />
+        <song
+            name="Bubble.mp3"
+            scenes="artifactworld"
+            boss="true"
+            volume="0.5"
+        />
+        <song
+            name="Bubble.mp3"
+            scenes="artifactworld"
+            boss="false"
+            volume="0.5"
+        />
+        <song
+            name="Kaikai Kitan.mp3"
+            scenes="voidraid"
+            boss="false"
+            volume="0.5"
+        />
+        <song
+            name="Aisai.mp3"
+            scenes="arena"
+            boss="true"
+            volume="0.5"
+        />
+        <song
+            name="Aisai.mp3"
+            scenes="arena"
+            boss="false"
+            volume="0.5"
+        />
+        <song
+            name="pray.mp3"
+            scenes="loadingbasic,splash"
+            boss="false"
+            volume="0"
+        />
+
+    </music>
+</settings>
